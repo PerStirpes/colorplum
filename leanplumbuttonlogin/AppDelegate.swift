@@ -20,13 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) ->
 
         Bool {
-            
                 Leanplum.setDeviceId(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
-                Leanplum.setAppId("?",
-                                  withDevelopmentKey:"?")
-            
+                Leanplum.setAppId("?", withDevelopmentKey:"?")
         // Override point for customization after application launch.
-        
+      
+      // wip  fix to add login  & user registration
         var accessToken: String? = nil
         if accessToken == nil
         {
