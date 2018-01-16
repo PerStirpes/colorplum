@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Bool {
             
                 Leanplum.setDeviceId(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
-                Leanplum.setAppId("app_lOBCiQGJZXak78RQzloJNHtEWTy9XQDTGvZ6Ww3Qnzc",
-                                  withDevelopmentKey:"dev_xJaBDmU1UfPYg47TroLKUff75ElSdUs00WB2JVF7K5g")
+                Leanplum.setAppId("?",
+                                  withDevelopmentKey:"?")
             
         // Override point for customization after application launch.
         
