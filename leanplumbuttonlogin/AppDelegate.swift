@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AdSupport
+
+import Leanplum
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,8 +17,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) ->
+
+        Bool {
+            
+                Leanplum.setDeviceId(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
+                Leanplum.setAppId("app_lOBCiQGJZXak78RQzloJNHtEWTy9XQDTGvZ6Ww3Qnzc",
+                                  withDevelopmentKey:"dev_xJaBDmU1UfPYg47TroLKUff75ElSdUs00WB2JVF7K5g")
+            
         // Override point for customization after application launch.
+        
+        var accessToken: String? = nil
+        if accessToken == nil
+        {
+            // Take user to a home page
+            let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let homePage = mainStoryboard.instantiateViewController(withIdentifier: "HomePageViewController") as! HomePageViewController
+            self.window?.rootViewController = homePage
+        }
+        
+            
+        Leanplum.start()
         return true
     }
 

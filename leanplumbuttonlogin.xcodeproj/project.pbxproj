@@ -12,9 +12,13 @@
 		8405317720093078003ADF9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8405317520093078003ADF9B /* Main.storyboard */; };
 		8405317920093078003ADF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8405317820093078003ADF9B /* Assets.xcassets */; };
 		8405317C20093078003ADF9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8405317A20093078003ADF9B /* LaunchScreen.storyboard */; };
+		840531842009357E003ADF9B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840531832009357E003ADF9B /* SignInViewController.swift */; };
+		8405318620093810003ADF9B /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405318520093810003ADF9B /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68410B74FCCA6B589039DF45 /* Pods-leanplumbuttonlogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leanplumbuttonlogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-leanplumbuttonlogin/Pods-leanplumbuttonlogin.debug.xcconfig"; sourceTree = "<group>"; };
+		74DAE241F33CCC26C9620D1A /* Pods-leanplumbuttonlogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leanplumbuttonlogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-leanplumbuttonlogin/Pods-leanplumbuttonlogin.release.xcconfig"; sourceTree = "<group>"; };
 		8405316E20093078003ADF9B /* leanplumbuttonlogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leanplumbuttonlogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8405317120093078003ADF9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8405317320093078003ADF9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,9 @@
 		8405317820093078003ADF9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8405317B20093078003ADF9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8405317D20093078003ADF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840531832009357E003ADF9B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8405318520093810003ADF9B /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		87D10E764DD07D02FA34DED7 /* Pods_leanplumbuttonlogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_leanplumbuttonlogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,8 @@
 			children = (
 				8405317020093078003ADF9B /* leanplumbuttonlogin */,
 				8405316F20093078003ADF9B /* Products */,
+				95DDECEFC1B3AAFF131A9596 /* Pods */,
+				F0EDF0065AE0AF4757F4858A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +66,30 @@
 				8405317120093078003ADF9B /* AppDelegate.swift */,
 				8405317320093078003ADF9B /* ViewController.swift */,
 				8405317520093078003ADF9B /* Main.storyboard */,
+				840531832009357E003ADF9B /* SignInViewController.swift */,
+				8405318520093810003ADF9B /* HomePageViewController.swift */,
 				8405317820093078003ADF9B /* Assets.xcassets */,
 				8405317A20093078003ADF9B /* LaunchScreen.storyboard */,
 				8405317D20093078003ADF9B /* Info.plist */,
 			);
 			path = leanplumbuttonlogin;
+			sourceTree = "<group>";
+		};
+		95DDECEFC1B3AAFF131A9596 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68410B74FCCA6B589039DF45 /* Pods-leanplumbuttonlogin.debug.xcconfig */,
+				74DAE241F33CCC26C9620D1A /* Pods-leanplumbuttonlogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0EDF0065AE0AF4757F4858A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87D10E764DD07D02FA34DED7 /* Pods_leanplumbuttonlogin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8405318020093078003ADF9B /* Build configuration list for PBXNativeTarget "leanplumbuttonlogin" */;
 			buildPhases = (
+				D573761F16A1D0F70B4E31A3 /* [CP] Check Pods Manifest.lock */,
 				8405316A20093078003ADF9B /* Sources */,
 				8405316B20093078003ADF9B /* Frameworks */,
 				8405316C20093078003ADF9B /* Resources */,
+				EC5D1DD13A1B7472E3538F51 /* [CP] Embed Pods Frameworks */,
+				D971430A0038E02D161056D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +162,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D573761F16A1D0F70B4E31A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-leanplumbuttonlogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D971430A0038E02D161056D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-leanplumbuttonlogin/Pods-leanplumbuttonlogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5D1DD13A1B7472E3538F51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-leanplumbuttonlogin/Pods-leanplumbuttonlogin-frameworks.sh",
+				"${PODS_ROOT}/Leanplum-iOS-SDK/Leanplum.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Leanplum.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-leanplumbuttonlogin/Pods-leanplumbuttonlogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8405316A20093078003ADF9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8405318620093810003ADF9B /* HomePageViewController.swift in Sources */,
 				8405317420093078003ADF9B /* ViewController.swift in Sources */,
 				8405317220093078003ADF9B /* AppDelegate.swift in Sources */,
+				840531842009357E003ADF9B /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +359,15 @@
 		};
 		8405318120093078003ADF9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68410B74FCCA6B589039DF45 /* Pods-leanplumbuttonlogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8NMS7FBCL;
 				INFOPLIST_FILE = leanplumbuttonlogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = Yes;
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = MBC.leanplumbuttonlogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -287,12 +377,14 @@
 		};
 		8405318220093078003ADF9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74DAE241F33CCC26C9620D1A /* Pods-leanplumbuttonlogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8NMS7FBCL;
 				INFOPLIST_FILE = leanplumbuttonlogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = MBC.leanplumbuttonlogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
